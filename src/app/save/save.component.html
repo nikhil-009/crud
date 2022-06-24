@@ -1,0 +1,18 @@
+<form class="example-form" [formGroup]= "dataForm">
+    <mat-form-field class="example-full-width" appearance="fill" >
+      <mat-label>ID</mat-label>
+      <input matInput placeholder="" value="" formControlName= "id">
+    </mat-form-field>
+
+    <mat-form-field class="example-full-width" appearance="fill" >
+      <mat-label>Title</mat-label>
+      <input matInput placeholder="" value="" formControlName= "title">
+    </mat-form-field>
+    
+  
+    <mat-form-field class="example-full-width" appearance="fill" >
+      <mat-label>Description</mat-label>
+      <textarea matInput placeholder="" formControlName= "description"></textarea>
+    </mat-form-field>
+    <button [disabled]= "!dataForm.valid" (click)= " addData()" type="submit" >Add</button>
+  </form>

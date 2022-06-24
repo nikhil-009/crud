@@ -1,0 +1,13 @@
+
+  <mat-card *ngFor= "let dat of dataSource">
+    
+        {{dat.id}}
+        <br>
+        {{dat.title}}
+        <br>
+        {{dat.description}}
+        <button  (click)= "editData(dat.id)">Edit</button>
+        <button  (click)= "removeData(dat.id)">Delete</button>
+
+  </mat-card>
+ 
